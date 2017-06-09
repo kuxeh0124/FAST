@@ -1,0 +1,8 @@
+1. Open the project
+2. Use the Selenium Libraries from the folder "selenium-dotnet-2.53.0" and add reference to following DLLs in your Project(this would be present where you download selenium\selenium-dotnet-2.48.0\net40 :-
+     * Selenium.WebDriverBackedSelenium.dll
+     * ThoughtWorks.Selenium.Core.dll
+     * WebDriver.dll
+     * WebDriver.Support.dll
+3. From the code, refer to the location of the phantomjs.exe. The executable file is in the "phantomjs-2.1.1-windows\phantomjs-2.1.1-windows\bin"
+4. In Order to capture snapshots you need to add a reference to System.Drawing from the default assemblies available.

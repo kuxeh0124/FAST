@@ -1,0 +1,6 @@
+F:\FAST Updated\FAST\CoffeeBeanReporter.dll.config
+F:\FAST Updated\FAST\CoffeeBeanReporter.dll
+F:\FAST Updated\FAST\CoffeeBeanReporter.pdb
+F:\FAST Updated\Frontier Automated System Testing\Metropolis\MetropolisReporter\obj\Debug\CoffeeBeanReporter.csprojResolveAssemblyReference.cache
+F:\FAST Updated\Frontier Automated System Testing\Metropolis\MetropolisReporter\obj\Debug\CoffeeBeanReporter.dll
+F:\FAST Updated\Frontier Automated System Testing\Metropolis\MetropolisReporter\obj\Debug\CoffeeBeanReporter.pdb

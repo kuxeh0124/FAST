@@ -1,0 +1,92 @@
+#########ABOUT ME#########
+- Use this JS to easily get the element locators by hovering over the said element
+- Setup:
+  - Copy the entire code after the ABOUT ME section
+  - Open your browser
+  - Create a new bookmark
+  - Enter a bookmark name e.g. "Elements"
+  - Past the copied JS code on the URL field of the bookmark
+  - Save the bookmark
+  - Open an internet page
+  - Click on the newly created bookmark
+  - Hover on an element
+  - See the magic =p
+#########ABOUT ME#########
+javascript: 
+
+if (!$('.length_ct').length) {   
+    $('body').append("<div class='length_ct' style='max-width:50%;overflow:auto;position:fixed;bottom:20px;left:20px;background-color:#690025;color:white;padding:20px 20px 20px 20px;z-index:9999;'>Click on an element</div>");
+} else {    
+    alert('There is already a length checker running! To restart please refresh the page and run it again!');
+}
+
+$(document).ready(function() {    
+    var t = "";
+    $('a,button').hover(function(e) {
+
+        var o = "";
+        var p = getElementXPath(e.target);
+        
+        o += "text: " + $(this).text() + "<br />";
+        o += "xpath:" + p.toLowerCase() + "<br /><br />";
+        o += "xpath:" + "//*[contains(text(),'" + $(this).text() + "')]" + "<br />";
+        
+        
+        for(var i in e.target.attributes){
+            if(e.target.attributes[i].nodeValue == null || e.target.attributes[i].nodeValue == undefined){
+            }else{
+                o += e.target.attributes[i].nodeName + ":" + e.target.attributes[i].nodeValue + "<br />";      
+            }
+        }
+        t = o;
+                
+        $('.length_ct').html(t); 
+    });    
+    
+    $('input,textarea,select,label').click(function(e) {
+
+        var o = "";
+        var p = getElementXPath(e.target);
+        
+        o += "text: " + $(this).text() + "<br />";
+        o += "xpath:" + p.toLowerCase() + "<br /><br />";
+        o += "xpath:" + "//*[contains(text(),'" + $(this).text() + "')]" + "<br />";
+        
+        
+        for(var i in e.target.attributes){
+           if(e.target.attributes[i].nodeValue == null || e.target.attributes[i].nodeValue == undefined){
+            }else{
+                o += e.target.attributes[i].nodeName + ":" + e.target.attributes[i].nodeValue + "<br />";      
+            }
+        }
+        
+        t = o;
+                
+        $('.length_ct').html(t); 
+    });    
+    
+});
+
+function getElementXPath(elt)
+{
+     var path = "";
+     for (; elt && elt.nodeType == 1; elt = elt.parentNode)
+     {
+        idx = getElementIdx(elt);
+        xname = elt.tagName;
+        if (idx > 0) xname += "[" + idx + "]";
+        path = "/" + xname + path;
+     }
+
+     return path;  
+}
+function getElementIdx(elt)
+{
+    var count = 1;
+    for (var sib = elt.previousSibling; sib ; sib = sib.previousSibling)
+    {
+        if(sib.nodeType == 1 && sib.tagName == elt.tagName)          count++
+    }
+    
+    return count;
+}

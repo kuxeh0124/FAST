@@ -1,0 +1,8 @@
+F:\FAST Updated\FAST\CoffeeBeanLibrary.dll.config
+F:\FAST Updated\FAST\CoffeeBeanLibrary.dll
+F:\FAST Updated\FAST\CoffeeBeanLibrary.pdb
+F:\FAST Updated\Frontier Automated System Testing\Metropolis\MetropolisLibrary\obj\Debug\CoffeeBeanLibrary.csprojResolveAssemblyReference.cache
+F:\FAST Updated\Frontier Automated System Testing\Metropolis\MetropolisLibrary\obj\Debug\NUnitPhantom2.Properties.Resources.resources
+F:\FAST Updated\Frontier Automated System Testing\Metropolis\MetropolisLibrary\obj\Debug\CoffeeBeanLibrary.csproj.GenerateResource.Cache
+F:\FAST Updated\Frontier Automated System Testing\Metropolis\MetropolisLibrary\obj\Debug\CoffeeBeanLibrary.dll
+F:\FAST Updated\Frontier Automated System Testing\Metropolis\MetropolisLibrary\obj\Debug\CoffeeBeanLibrary.pdb
